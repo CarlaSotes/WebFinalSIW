@@ -1,0 +1,43 @@
+body{
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+div{
+    background-color: lightgray;
+    font-size: 120%;
+    padding-bottom: 5%;
+    box-shadow: 0 0 10px black;
+}
+
+h1{
+    padding: 3%;
+    color:#47525E;
+    background-color: lightblue;
+    margin-bottom: 1%;
+    box-shadow: 0 0 10px rgb(39 38 39);
+}
+
+table{
+    padding-top: 5%;
+    margin-left:33%;
+    text-align: center;
+}
+
+tr th{
+    border-bottom: solid 1px;
+}
+
+tr td{
+    color:gray;
+}
+
+button {
+    margin-top: 2%;
+    padding: 10px;
+    background: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 0.5%;
+    box-shadow: 0 0 10px rgb(39 38 39);
+}

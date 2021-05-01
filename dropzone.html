@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/dropzone.min.css">
+        <title>Document</title>
+        
+    </head>
+
+    <body>
+        <div class="form-container">
+            <h1 class="title">SUBIDA DE FOTOS PARA LA RUTA</h1>
+            
+            <form class="dropzone" id="FormUploadFile" action="upload.php" enctype="multipart/form-data" method="POST"> 
+                <div class="dz-message">
+                    <h2> Soltar </h2>
+                    <span class="note">No hay archivos todavía</span>
+                </div>
+        
+                <div class="fallback">
+                    <!-- El atributo multiple permite la múltiple subida de archivos -->
+                        <input type="file" name="file">
+                </div>
+            </form>
+            <br>
+            <a href="../cuenta.php">VOLVER A LA CUENTA</a>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+        <script type="text/javascript" src="js/dropzone.js"></script>
+        <script type="text/javascript" src="js/aplicacion.js"></script>
+        
+    </body>
+
+</html>

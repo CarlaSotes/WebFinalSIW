@@ -1,0 +1,7 @@
+hola
+12
+hola2
+SELECT MAX(idImagen) AS ultimo FROM IMAGEN WHERE iditinerario='12' GROUP BY iditinerario
+nuevo nombre: im/127.jpg
+insert: INSERT INTO IMAGEN VALUES('127','127.jpg','12')
+consulta ejecutada

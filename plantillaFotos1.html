@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="administracion.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>HERMA - Administración</title>
+
+        <script>
+            function elegidopais() {
+                var id =  $("#idpais").val();
+                $.ajax({
+                    url: "fotos2.php?idpais="+id,
+                    type: "get",
+                    success: function(resultado) {
+                        $("#caparutas").html(resultado);
+                    }
+			    });
+		    }
+        </script>
+
+    </head>
+    <body>
+        <h1>MODIFICACIÓN DE RUTAS</h1>
+        <form action="fotos3.php" method="GET">
+            <!-- Elegir país -->
+            <label for="idpais">Elija país:</label>
+            <select name="idpais" id="idpais" onchange="elegidopais();">
+                <option value="0">Seleccione país</option>
+                ##filapais##
+                <option value="##pais##">##pais## </option>
+                ##filapais##
+            </select>
+            <br>
+            <div id="caparutas"></div>
+            <br>
+            <a href="cuenta.php">Volver a la cuenta</a>
+        </form>
+        
+    </body>
+</html>

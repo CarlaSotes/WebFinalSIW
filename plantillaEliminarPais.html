@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="administracion.css" rel="stylesheet">
+        <title>HERMA - Administración</title>
+
+    </head>
+    <body>
+        <h1>ADMINISTRACIÓN DE PAÍSES</h1>
+        <form action="eliminarPais.php" method="POST">
+            <label for="idpais">Elija país:</label>
+            <select name="idpais" id="idpais" required>
+                <option value="0">Seleccione país</option>
+                ##filapais##
+                <option value="##pais##">##pais## </option>
+                ##filapais##
+            </select>
+            <br>
+            <br>
+            <button type="submit">ELIMINAR</button>
+            <a href="cuenta.php">Volver a la cuenta</a>
+        </form>
+        
+    </body>
+</html>

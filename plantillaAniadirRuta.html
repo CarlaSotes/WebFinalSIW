@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="administracion.css" rel="stylesheet">
+        <script>
+            function texto() {
+                alert("Este identificador de ruta es el identificador de país y su número de rutas más 1");
+		    }
+            function texto1() {
+                alert("Preferiblemente en formato html");
+		    }
+        </script>
+        <script>
+            function goBack() {
+                window.history.back();
+            }</script>
+        <style>
+            table{
+                position:relative;
+                margin-left: 33.33%;
+            }
+            #tabla th{
+                align-items:center;
+                border-bottom:1px solid black;
+            }
+            #tabla td{
+                align-items:center;
+                border-bottom:1px solid black;
+            }
+        </style>
+        <title>HERMA - Administración</title>
+
+    </head>
+    <body>
+        <h1>ADICIÓN DE RUTA</h1>
+        <form action="aniadirRuta.php" method="POST">
+            <div id='formulario'>
+                <label>Pais:</label>
+                <input type="text" name="pais" required>
+                <br>
+                <label>Nombre ruta:</label>
+                <input type="text" name="itinerario" required>
+                <br>
+                <label>Identificador itinerario:</label>
+                <input type="text" name="idItinerario" onclick="texto();" required>
+                <br>
+                <label>Identificador país:</label>
+                <input type="text" name="idPais" required>
+                <br>
+                <label>Contenido:</label>
+                <br>
+                <textarea type="text" name="contenido" onclick="texto1();" required></textarea>
+                <br>
+                <br>
+            </div>
+            <br>
+            <table id="opciones">
+                <tr>
+                    <td><a href="cuenta.php">Volver a la cuenta</a></td>
+                    <td><button type="submit">AÑADIR RUTA</button></td>
+                </tr>
+            </table>
+            <br>
+            <div>
+                <table id="tabla">
+                    <tr>
+                        <th>Pais</th>
+                        <th>Identificador del país</th>
+                        <th>Número de rutas</th>
+                    </tr>
+                    ##fila##
+                    <tr>
+                    
+                        <td>##pais##</td>
+                        <td>##idPais##</td>
+                        <td>##ruta##</td>
+                        
+                    </tr>
+                    ##fila##
+                </table>
+            </div>
+            <br>
+            <br>
+            <button onclick="goBack()">VOLVER</button>
+        </form>
+
+    </body>
+</html>

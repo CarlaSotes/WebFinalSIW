@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Aceptar caractéres especiales -->
+    <meta charset="UTF-8">
+    <!-- Título de la página -->
+    <title>Herma</title>
+    <!-- Añador CSS -->
+    <link rel="stylesheet" href ="##estilocss##.css"/>
+    <!-- Script de js necesario para realizar pdfs -->
+    <script src="pdf.js"></script>
+    <!-- Link de un script externo para poder realizar pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+
+
+
+<style>
+    .link {
+    color: #3940c6;
+    font-family: helvetica;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+</style>
+
+
+<body>
+<!-- Título de la web -->
+<header>
+    <h1> ##nombrePaisTitulo## </h1>
+    <h2> ##lema## </h2>
+    <button> <a href="registrar.html">REGISTRARSE/LOGIN</a></button>
+</header>
+<!-- Índice de la web -->
+<nav id="header">
+    <ul class="nav">
+        <!-- EUROPA -->
+        <li id = "europa"> <a href="">EUROPA</a>
+            <ul>
+                ##fila##
+                <li><a href="plantillaItinerario.php?idpais=##idpais##" >##pais##</a></li>
+                ##fila##
+            </ul>
+        </li>
+        <!-- AMÉRICA -->
+        <li id = "america"> <a href="">AMÉRICA</a>
+            <ul>
+                ##fila##
+                <li><a href="plantillaItinerario.php?idpais=##idpais##">##pais##</a></li>
+                ##fila##
+            </ul>
+        </li>
+        <!-- ASIA -->
+        <li id = "asia"> <a href="">ASIA</a>
+            <ul>
+                ##fila##
+                <li><a href="plantillaItinerario.php?idpais=##idpais##" >##pais##</a></li>
+                ##fila##
+            </ul>
+        </li>
+        <!-- ÁFRICA -->
+        <li id = "africa"> <a href="">ÁFRICA</a>
+            <ul>
+                ##fila##
+                <li><a href="plantillaItinerario.php?idpais=##idpais##" >##pais##</a></li>
+                ##fila##
+            </ul>
+        </li>
+        <!-- OCEANÍA -->
+        <li id = "oceania"> <a href="">OCEANÍA</a>
+            <ul>
+                ##fila##
+                <li><a href="plantillaItinerario.php?idpais=##idpais##" >##pais##</a></li>
+                ##fila##
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<aside>
+    <ul>
+        ##filaMenu##
+        <li><a href= "#-iditinerario-">##nombreitinerario##</a></li>
+        ##filaMenu##
+        <br/><br/>
+        <!-- Se tiene que hacer href a index.php, pues es este php es el que carga la pagina principal -->
+        <li><a href="index.php">Volver a página principal</a></li>
+    </ul>
+</aside>
+
+<main>
+    <!-- Se coloca id para poder usar la funcion de js -->
+    <div id="topdf">
+    <section>
+        ##article##
+        <article id="##iditinerario##">
+            <h2>
+                ##nombreitinerarioActual##
+            </h2>
+                    ##textoItinerario##
+            <!-- IMAGENES AQUI-->
+            <a href="cargarGaleria.php?idItinerario=##iditinerario##&nombrePais=##nombrePaisActual##"  style="text-align:center" class="link">Ver imágenes...</a>
+
+            <a href="reservar.php?idItinerario=##iditinerario##">
+            <button>RESERVAR</button>
+            </a>
+
+        </article>
+        ##article##
+    </section>
+        </div>
+        <!--<a href="pdfConverter.php?nombrePais=##nombrePaisRuta##" class="bottomright">  <input type="button" value = 'PDF' > </a>-->
+    <button id="pdf_button"> PDF </button>
+
+</main>
+</body>
+
+
+
+</html>

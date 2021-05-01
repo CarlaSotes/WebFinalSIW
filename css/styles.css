@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+}
+
+.title{
+    text-align: center;
+    color: teal;
+    font-weight: bold;
+    margin: 3%;
+}
+.form-container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.form-container{
+    padding: 40px;
+}

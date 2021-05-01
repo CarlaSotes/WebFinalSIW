@@ -1,0 +1,203 @@
+/* PROPEIDADES DEL CUERPO */
+body {
+    /* Tipo de letra de la web */
+    font-family: monospace;
+}
+
+/* PROPIEDADES DEL HEADER */
+header {
+    /* Espacio entre las letras y el elemento header */
+    padding: 1%;
+    /* Alineación del texto - central */
+    text-align: center;
+
+    background:#1B2030 url(https://source.unsplash.com/nq4tcJz77r0) 50%  no-repeat;
+    width:100%;
+    animation: grow 30s  linear 10ms infinite;
+    transition:all 1s ease-in-out;
+    z-index:-2
+
+}
+
+/* PROPIEDADES DEL TÍTULO H1 DE LA CABECERA */
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    font-family: monospace;
+}
+
+/* PROPIEDADES DEL TÍTULO H2 DE LA CABECERA*/
+header h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* PROPIEDADES DEL BOTÓN DE CUENTA */
+button{
+    margin-left: 88%;
+    padding: 0.5%;
+}
+
+/* ALINEAR */
+* {
+    padding:0px;
+}
+
+/* CENTRAR EL MENÚ */
+#header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* PROPIEDADES DE TODA LA LISTA */
+ul {
+    /* Quitar los círculos */
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+/* PROPIEDADES DE LOS ELEMENTOS DEL MENÚ - DE LOS PAÍSES */
+.nav li a {
+    /* Poner el texto en negrita */
+    font-weight: bold;
+    /* Color de la letra */
+    color: #47525E;
+    /* Quitar la línea de subrayado que indica que es un link */
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+/* PROPIEDADES EUROPA */
+nav #europa{
+    background-color: lightgreen;
+    text-align: left;
+    color: #47525E;
+}
+.nav #europa li a{
+    background-color: rgb(188, 235, 188);
+}
+
+/* PROPIEDADES AMERICA*/
+nav #america{
+    background-color: rgb(189, 170, 231);
+    text-align: left;
+    color: #47525E;
+}
+.nav #america li a{
+    background-color: rgb(214, 202, 240);
+}
+
+/* PROPIEDADES ASIA */
+nav #asia{
+    background-color: lightcoral;
+    text-align: left;
+    color: #47525E;
+}
+.nav #asia li a{
+    background-color: rgb(233, 173, 173);
+}
+
+
+/* PROPIEDADES AFRICA*/
+nav #africa{
+    background-color: lightsalmon;
+    text-align: left;
+    color: #47525E;
+}
+.nav #africa li a{
+    background-color: rgb(247, 188, 165);
+}
+
+/* PROPIEDADES OCEANIA */
+nav #oceania{
+    background-color: rgb(241, 241, 89);
+    text-align: left;
+    color: #47525E;
+}
+.nav #oceania li a{
+    background-color: rgb(236, 236, 152);
+}
+
+/* PRIPIEDADES DE LOS ELEMENTOS DE LA LISTA AL SEÑALAR CON EL RATÓN */
+.nav li a:hover {
+    background-color:#ccc3c3;
+}
+.nav #europa a:hover {
+    background-color:#ccc3c3;
+}
+.nav #america a:hover {
+    background-color:#ccc3c3;
+}
+.nav #asia a:hover {
+    background-color:#ccc3c3;
+}
+.nav #africa a:hover {
+    background-color:#ccc3c3;
+}
+.nav #oceania a:hover {
+    background-color:#ccc3c3;
+}
+
+/* HACER QUE LOS ELEMENTOS DE CADA CONTINENTE NO SE VEAN, QUE APAREZCAN CUANDO SE SEÑALA */
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+/* MOSTRAR LOS ELEMENTOS DE CADA CONTINENTE EN MODO BLOQUE, SI NO, NO SE VEN */
+.nav li:hover > ul {
+    display:block;
+}
+
+
+/* PROPIEDADES DEL ASIDE */
+aside{
+    /* Llevarlo a la derecha */
+    float: right;
+    margin-top: 4%;
+    /* Cuanto va a ocupar en la página */
+    width: 25%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    /* Color de fondo */
+    background: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%);
+    text-align: center;
+}
+
+article{
+    /* Considerar lo anterior como un bloque */
+
+    /* Ocupar un cierto espacio */
+    width: 75%;
+    float: left;
+
+}
+/* PROPIEDADES DEL CONTENIDO */
+article h2{
+    /* Color de fondo */
+    background-color: rgb(65, 88, 215);
+    /* Alinear texto al centro */
+    text-align: center;
+    /* Color de texto */
+    color: #ff5151;
+    /* Reborde de texto */
+    padding: 1%;
+}
+
+article p{
+    /* Fuente de texto */
+    font-family: Loto, sans-serif;
+    /* Color de texto */
+    color: #8190A5;
+    /* Justificar el texto */
+    text-align: justify;
+    /* Poner márgenes para centrar el texto */
+    margin-left: 2%;
+    margin-right: 2%;
+}

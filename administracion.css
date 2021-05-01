@@ -1,0 +1,25 @@
+body{
+    font-family: Roboto, sans-serif;
+    text-align: center;
+   
+}
+
+h1{
+    padding: 3%;
+    color:#47525E;
+    background-color: lightblue;
+    margin-bottom: 1%;
+    box-shadow: 0 0 10px rgb(39 38 39);
+}
+
+form{
+    padding-top: 3%;
+    background-color: lightgray;
+    font-size: 120%;
+    padding-bottom: 5%;
+    box-shadow: 0 0 10px black;
+}
+
+select{
+    font-size: xx-large;
+}
