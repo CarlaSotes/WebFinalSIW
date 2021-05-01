@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script>
+        function goBack() {
+            window.history.back();
+        }</script>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .card p{
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>ACERCA DE</h1>
+        <p>En Herma, nos centramos en preparte los mejores itinerarios de viajes , abarcando una gran cantidad
+            de destinos.¿Te apetece un plan que involucre la comida en USA?
+            Te lo ofrecemos. ¿Quieres algo tradicional en india? Lo tenemos. ¿Quieres algo que no está en la web?
+            ¡Ponte de igual manera en contacto con nosotros! </p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="im/carla.jpg" alt="Carla" style="width:82%" aria-labelledby="foto de carla">
+                <div class="container">
+                    <h2>Carla</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Conocer mundo abre mentes. Me encanta viajar, el arte y luchadora medioambiental. Siempre abierta
+                        a ideas. ¡No dudes en contactarme!</p>
+                    <p>sotes.126113@e.unavarra.es</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="im/alex.jpg" alt="Alex" style="width:100%" aria-labelledby="foto de alex">
+                <div class="container">
+                    <h2>Alex</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>No digas es imposible, di, aún no lo he intentado. Me encanta conocer nuevas culturas, la ciencia y la tecnología. Dispuesto a ayudar a 
+                    los demás a descubrir nuevas cosas. </p>
+                    <p>alexTieneUnaWeb@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <!-- Boton que permite volver atras -->
+        <button onclick="goBack()" class="button">VOLVER</button>
+        <!-- Se inserta espacio en blanco -->
+        <div class="gap-40"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="administracion.css" rel="stylesheet">
+        <script>
+            function texto() {
+                alert("El id del nuevo país es el número de países que hay más 1");
+		    }
+        </script>
+        <title>HERMA - Administración</title>
+
+    </head>
+    <body>
+        <h1>ADMINISTRACIÓN DE PAÍSES</h1>
+        <form action="aniadirPais.php" method="POST">
+            <label>Continente:</label>
+            <input type="text" name="continente" required>
+            <br>
+            <label>Lema:</label>
+            <input type="text" name="lema" required>
+            <br>
+            <label>País:</label>
+            <input type="text" name="pais" required>
+            <p name=numeropaises>Actualmente hay ##numpaises## países</p>
+            <p id="texto"></p>
+            <label>Id:</label>
+            <input type="text" name="id" onclick="texto();" required>
+            <br>
+            <br>
+            <button type="submit">AÑADIR</button>
+            <a href="cuenta.php">Volver a la cuenta</a>
+        </form>
+        
+    </body>
+</html>

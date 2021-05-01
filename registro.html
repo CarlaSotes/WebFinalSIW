@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Herma - Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href ="registro.css"/>
+        
+    </head>
+    <body>
+        
+        <div class="window-notice" id="window-notice">
+            <div class="content">
+            <h1>Registro</h1>
+                <form action="registro.php"  method="post">
+                    <!-- Campos a rellenar -->
+                    <div>
+                        <input type="text" name="name" placeholder="Introduce el nombre" required>
+                        <input type="text" name="surname" placeholder="Introduce el apellido" required>
+                        <input type="text" name="id" placeholder="Introduce el idUsuario" required>
+                        <input type="email" name="email" placeholder="Introduce el correo" required>
+                        <input type="password" name="pswd1" placeholder="Introduce la contraseña" required>
+                    </div>
+                    
+                    <button type="submit" value="Send">REGISTRARSE</button>
+
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>

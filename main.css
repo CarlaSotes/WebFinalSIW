@@ -1,0 +1,178 @@
+/* PROPEIDADES DEL CUERPO */
+body {
+    /* Tipo de letra de la web */
+    font-family: monospace;
+}
+
+/* PROPIEDADES DEL HEADER */
+header {
+    background-color: lightblue;
+    /* Espacio entre las letras y el elemento header */
+    padding: 1%;
+    /* Alineación del texto - central */
+    text-align: center;
+
+    
+}
+
+/* PROPIEDADES DEL TÍTULO H1 DE LA CABECERA */
+header h1 {
+    color: #47525E;
+    font-size: 40px;
+    text-align: center;
+    font-family: monospace;
+}
+
+/* PROPIEDADES DEL TÍTULO H2 DE LA CABECERA*/
+header h2 {
+    color: #8190A5;
+    text-align: center;
+}
+
+/* PROPIEDADES DEL BOTÓN DE CUENTA */
+button{
+    padding: 10px;
+    background: white;
+    /* Quitarle el recuadrito que viene por defecto */
+    border: 0;
+    /* Esquinas redondas */
+    border-radius: 3px;
+    padding: 0.5%;
+    /* Sombra del botón */
+    box-shadow: 0 0 10px rgb(39, 38, 39);
+}
+
+/* ACCIÓN AL SEÑALAR EL BOTÓN */
+button:hover{
+    background-color: rgba(238, 229, 226, 0.884);
+}
+
+/* TEXTO DEL BOTÓN */
+button a {
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color:#47525E;
+}
+
+/* ALINEAR */
+* {
+    padding:0px;
+}
+
+/* CENTRAR EL MENÚ */
+#header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* PROPIEDADES DE TODA LA LISTA */
+ul {
+    /* Quitar los círculos */
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+/* PROPIEDADES DE LOS ELEMENTOS DEL MENÚ - DE LOS PAÍSES */
+.nav li a {
+    /* Poner el texto en negrita */
+    font-weight: bold;
+    /* Color de la letra */
+    color: #47525E;
+    /* Quitar la línea de subrayado que indica que es un link */
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+/* PROPIEDADES EUROPA */
+nav #europa{
+    background-color: lightgreen;
+    text-align: left;
+    color: #47525E;
+}
+.nav #europa li a{
+    background-color: rgb(188, 235, 188);
+}
+
+/* PROPIEDADES AMERICA*/
+nav #america{
+    background-color: rgb(189, 170, 231);
+    text-align: left;
+    color: #47525E;
+}
+.nav #america li a{
+    background-color: rgb(214, 202, 240);
+}
+
+/* PROPIEDADES ASIA */
+nav #asia{
+    background-color: lightcoral;
+    text-align: left;
+    color: #47525E;
+}
+.nav #asia li a{
+    background-color: rgb(233, 173, 173);
+}
+
+
+/* PROPIEDADES AFRICA*/
+nav #africa{
+    background-color: lightsalmon;
+    text-align: left;
+    color: #47525E;
+}
+.nav #africa li a{
+    background-color: rgb(247, 188, 165);
+}
+
+/* PROPIEDADES OCEANIA */
+nav #oceania{
+    background-color: rgb(241, 241, 89);
+    text-align: left;
+    color: #47525E;
+}
+.nav #oceania li a{
+    background-color: rgb(236, 236, 152);
+}
+
+/* PRIPIEDADES DE LOS ELEMENTOS DE LA LISTA AL SEÑALAR CON EL RATÓN */
+.nav li a:hover {
+    background-color:#ccc3c3;
+}
+.nav #europa a:hover {
+    background-color:#ccc3c3;
+}
+.nav #america a:hover {
+    background-color:#ccc3c3;
+}
+.nav #asia a:hover {
+    background-color:#ccc3c3;
+}
+.nav #africa a:hover {
+    background-color:#ccc3c3;
+}
+.nav #oceania a:hover {
+    background-color:#ccc3c3;
+}
+
+/* HACER QUE LOS ELEMENTOS DE CADA CONTINENTE NO SE VEAN, QUE APAREZCAN CUANDO SE SEÑALA */
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+/* MOSTRAR LOS ELEMENTOS DE CADA CONTINENTE EN MODO BLOQUE, SI NO, NO SE VEN */
+.nav li:hover > ul {
+    display:block;
+}
+
+/* PROPIEDADES DE LA IMAGEN */
+img{
+    /* Considerar lo anterior como un bloque */
+    clear: both;
+    /* Cambiar el tamaño de imagen */
+}

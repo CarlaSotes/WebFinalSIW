@@ -1,0 +1,69 @@
+.window-notice {
+    /* Color de fondo */
+    background: rgba(33, 41, 52, .85);
+    /* Colocar el panel en el centro */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+.window-notice .content {
+    background:white;
+    border-radius: 2px;
+    /* Dar sombra a la caja */
+    box-shadow: 0 1px 10px rgb(0, 255, 221);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+    
+}
+
+.window-notice .content .content-text {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 3%;
+    border-bottom:solid #8190A5;
+    color: #47525E;
+}
+
+div .content-buttons{
+    padding-top: 1%;
+}
+
+button{
+    padding: 10px;
+    color: #fff;
+    background: #0098cb;
+    width: 320px;
+    margin: 20px auto;
+    margin-top: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button a{
+    /* Quitar la linea de enlace */
+  
+    color:white;
+    font-size: 1.1rem;
+    font-family: monospace;
+    
+}
+
+button:hover {
+background-color: #55cff1;
+}
